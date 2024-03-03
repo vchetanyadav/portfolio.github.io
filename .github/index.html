@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/0.jpg" class="logo">
+            <ul>
+                
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hearder-text">
+            <p>Student</p>
+            <h1>Hi,I'm chetan</h1>
+        </div>
+    </div>
+</div>
+<div id ="about">
+    <div class="container">
+        <div class="row">
+           <div class="about-col-1">
+               <img src="images/Chetan photo_page-0001.jpg"
+        </div>
+        <div class="about-col-2">
+            <h1 class="Sub-title">About me</h1>
+            <p>
+                To obtain a level position in my career and put all my efforts into the growth of the organization and have a
+                great working environment and, where I can improve technical knowledge.
+            </p>
+            <div class="tab-titles">
+                <p class ="tab-link active-link" onclick="openTab('skills')">Skills</p>
+                <p class ="tab-link" onclick="openTab('certification')">Certification</p>
+                <p class ="tab-link" onclick="openTab('education')">Education</p>
+        
+               
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>1.</span>Python</li>
+                <li><span>2.</span>Basics of C, Java</li>
+                <li><span>3.</span>Knowledge of DBMS and Database Languages</li>
+                <li><span>4.</span>SQL</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="certification">
+            <ul>
+                <li><span>Oracle java foundation</span><br>java foundationcertifiacte from oracle</li>
+                <li><span>cisco cybersercurity</span><br>cybersecurity certifiacte from cisco</li>
+                <li><span>IBM DataScience</span><br>DataScience certificate provided by IBM</li>
+                <li><span >Python</span><br>Python certificate provided by Great Learning</li>
+                <li><span>App Development</span><br>App Development certifiacte provided by foxmula</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span>2018</span><br>completed 10th std from Vagdevi Vilas School</li>
+                <li><span>2020</span><br>completed 12th from Sri Chaitanya tecno College</li>
+                <li><span>2024</span><br>pursuing Computer Science engineering from East point college of engineering and tecnology </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function openTab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+<footer id="footer">
+    <div class="container">
+        <div class="footer-content">
+            <h3>Contact Information</h3>
+            <p>Email: chetany009@gmail.com</p>
+            <p>Phone: 8217691980</p>
+            <p>#32,1st cross , raviprakash nagar,KonenaAgrahara,HAL,Bangalore</p>
+        </div>
+    </div>
+</footer>
+
+</body> 
+</html>
